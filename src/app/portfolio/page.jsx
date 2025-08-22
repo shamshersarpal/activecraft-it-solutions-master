@@ -12,7 +12,7 @@ export default function Portfolio() {
   const [portfolioData, setPortfolioData] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/get-sub-category`)
+    fetch(`https://ciseb.com/activecraft/public/api/get-sub-category`)
       .then((res) => res.json())
       .then((data) => {
         if (data.status && Array.isArray(data.data)) {
