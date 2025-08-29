@@ -95,7 +95,7 @@ export default function Portfolio() {
               key={index}
               rel="noopener noreferrer"
             >
-              <div className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow">
+              <div className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transform transition-transform duration-500 ease-in-out hover:scale-103">
                 <div className="p-4 bg-[#3e495b75]">
                   {item.single_image ? (
                     <Image

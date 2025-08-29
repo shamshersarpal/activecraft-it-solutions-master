@@ -13,25 +13,46 @@ export default function AboutCompany() {
               18 Years Experience in <br></br> IT SOLUTIONS
             </h1>
             <p className="text-[#545454]">
-              Located at Mohali (India) Activecraft is the most experienced, professional and best web development company. Success in web Development Company depends on client’s satisfaction. Activecraft builds relationship with our clients based on trust and mutual understanding. Our dedicated, experienced, web development team dedicated for you to provide affordable, quality, value added services, reliable and affordable website development to focus on your business needs. We offer website designing, web applications development, IT services, Software development and SEO services.
+              Located at Mohali (India) Activecraft is the most experienced,
+              professional and best web development company. Success in web
+              Development Company depends on client’s satisfaction. Activecraft
+              builds relationship with our clients based on trust and mutual
+              understanding. Our dedicated, experienced, web development team
+              dedicated for you to provide affordable, quality, value added
+              services, reliable and affordable website development to focus on
+              your business needs. We offer website designing, web applications
+              development, IT services, Software development and SEO services.
             </p>
 
             <div className="grid grid-cols-2 gap-5">
-              <div className="bg-white border border-[#404a5c51] p-3 mt-3 rounded-lg">
-                <h3 className="text-xl font-semibold text-[#404A5C] ">Our Mission</h3>
-                <p className="text-[#545454]">
-                  Our Mission is to completely delight and satisfy our clients
-                  with our creative Design and Development services.
-                </p>
-              </div>
+              <div className="relative bg-white border border-[#404a5c51] p-3 mt-3 rounded-lg overflow-hidden group">
+  {/* Solid black overlay sliding from top to bottom */}
+  <div className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out rounded-lg"></div>
 
-              <div className="bg-white border border-[#404a5c51] p-3 mt-3 rounded-lg">
-                <h3 className="text-xl font-semibold text-[#404A5C]">Our Vision</h3>
-                <p className="text-[#545454]">
-                  Our vision is to provide the best service to our clients so
-                  that they always get the result as they want and trust on us.
-                </p>
-              </div>
+  <div className="relative z-10">
+    <h3 className="text-xl font-semibold text-[#404A5C] group-hover:text-white transition-colors duration-500">
+      Our Mission
+    </h3>
+    <p className="text-[#545454] group-hover:text-gray-200 transition-colors duration-500">
+      Our Mission is to completely delight and satisfy our clients
+      with our creative Design and Development services.
+    </p>
+  </div>
+</div>
+
+   <div className="relative bg-white border border-[#404a5c51] p-3 mt-3 rounded-lg overflow-hidden group">
+  {/* Solid black overlay sliding from top to bottom */}
+  <div className="absolute inset-0 bg-black -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out rounded-lg"></div>
+
+  <h3 className="relative z-10 text-xl font-semibold text-[#404A5C] group-hover:text-white transition-colors duration-500">
+    Our Vision
+  </h3>
+  <p className="relative z-10 text-[#545454] group-hover:text-gray-200 transition-colors duration-500">
+    Our vision is to provide the best service to our clients so
+    that they always get the result as they want and trust on us.
+  </p>
+</div>
+
             </div>
           </div>
 
@@ -39,7 +60,7 @@ export default function AboutCompany() {
             <Image
               src={aboutimage}
               alt="about us"
-              className="w-full rounded-2xl"
+              className="w-full rounded-2xl transform transition-transform duration-500 ease-in-out hover:scale-105"
             />
           </div>
         </div>

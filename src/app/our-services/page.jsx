@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Link from "next/link";
 
 export default function OurServices() {
   return (
@@ -33,30 +34,30 @@ export default function OurServices() {
       <p className="text-gray-500 mt-6 text-lg leading-relaxed">
         Activecraft offers interactive, holistic, and complete web design and development services with core proficiency in E-Learning software, web application development, e-commerce website, CMS and customized website development.
       </p>
-       <button
+       <Link href="/contact-us"
               type="button"
-              className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
+              className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none d-block mt-5 "
             >
               Contact Us
-            </button>
+            </Link>
     </div>
     {/* Right Content / Services */}
     <div>
       <h3 className="text-2xl font-bold text-gray-600 mb-6">Services</h3>
       <div className="space-y-4">
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/01</span>
           <span className="ml-2 font-semibold text-gray-800">Full Stack Development</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/02</span>
           <span className="ml-2 font-semibold text-gray-800">Bootstrap Framework</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/03</span>
           <span className="ml-2 font-semibold text-gray-800">E-Learning- Services</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/04</span>
           <span className="ml-2 font-semibold text-gray-800">Php Framework</span>
         </div> 
@@ -69,19 +70,19 @@ export default function OurServices() {
     <div>
       <h3 className="text-2xl font-bold text-gray-600 mb-6">Services</h3>
       <div className="space-y-4">
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/01</span>
           <span className="ml-2 font-semibold text-gray-800">React Native</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/02</span>
           <span className="ml-2 font-semibold text-gray-800">Flutter</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/03</span>
           <span className="ml-2 font-semibold text-gray-800">Swift</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/04</span>
           <span className="ml-2 font-semibold text-gray-800">Objective-C
 </span>
@@ -133,23 +134,23 @@ export default function OurServices() {
     <div>
       <h3 className="text-2xl font-bold text-gray-600 mb-6">Services</h3>
       <div className="space-y-4">
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/01</span>
           <span className="ml-2 font-semibold text-gray-800">SEO</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/02</span>
           <span className="ml-2 font-semibold text-gray-800">SEM</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/03</span>
           <span className="ml-2 font-semibold text-gray-800">SMM</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/04</span>
           <span className="ml-2 font-semibold text-gray-800">PPC Adwords</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/05</span>
           <span className="ml-2 font-semibold text-gray-800">Link Building</span>
         </div> 
@@ -162,15 +163,15 @@ export default function OurServices() {
     <div>
       <h3 className="text-2xl font-bold text-gray-600 mb-6">Services</h3>
       <div className="space-y-4">
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/01</span>
           <span className="ml-2 font-semibold text-gray-800">Graphic Design</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/02</span>
           <span className="ml-2 font-semibold text-gray-800">Responsive Web Design</span>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm">
+        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
           <span className="text-gray-400 font-mono">/03</span>
           <span className="ml-2 font-semibold text-gray-800">E-Commerce Website </span>
         </div>  

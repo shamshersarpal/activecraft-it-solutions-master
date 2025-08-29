@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="w-full bg-white sticky top-0 z-10">
+      <div className="w-full bg-white sticky top-0 z-20">
         <div className="desktop-menu max-w-screen-xl m-auto px-4 ">
           <div className="flex items-center justify-between py-8">
             <div>

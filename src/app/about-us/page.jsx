@@ -9,15 +9,15 @@ export default function AboutUsPage() {
     <>
       <Header />
 
-       <section
+      <section
         id="home"
         className="  bg-no-repeat bg-cover relative -z-10 active "
       >
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 hero">
           <div className="lg:px-20 px-10">
             <h1 className="lg:text-[62px] md:text-[35px] text-[28px] mt-5  text-white font-bold leading-none">
-            About <span className="text-[#FF9900]">Us</span>
-          </h1>  
+              About <span className="text-[#FF9900]">Us</span>
+            </h1>
           </div>
         </div>
       </section>
@@ -44,21 +44,29 @@ export default function AboutUsPage() {
             </p>
 
             <div className="grid grid-cols-2 gap-5">
-              <div className="bg-white border border-[#404a5c51] p-3 mt-3 rounded-lg">
-                <h3 className="text-xl font-semibold text-[#404A5C] ">
-                  Our Mission
-                </h3>
-                <p className="text-[#545454]">
-                  Our Mission is to completely delight and satisfy our clients
-                  with our creative Design and Development services.
-                </p>
+              <div className="relative bg-white border border-[#404a5c51] p-3 mt-3 rounded-lg overflow-hidden group">
+                {/* Solid black overlay sliding from top to bottom */}
+                <div className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out rounded-lg"></div>
+
+                <div className="relative z-10">
+                  <h3 className="text-xl font-semibold text-[#404A5C] group-hover:text-white transition-colors duration-500">
+                    Our Mission
+                  </h3>
+                  <p className="text-[#545454] group-hover:text-gray-200 transition-colors duration-500">
+                    Our Mission is to completely delight and satisfy our clients
+                    with our creative Design and Development services.
+                  </p>
+                </div>
               </div>
 
-              <div className="bg-white border border-[#404a5c51] p-3 mt-3 rounded-lg">
-                <h3 className="text-xl font-semibold text-[#404A5C]">
+              <div className="relative bg-white border border-[#404a5c51] p-3 mt-3 rounded-lg overflow-hidden group">
+                {/* Solid black overlay sliding from top to bottom */}
+                <div className="absolute inset-0 bg-black -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out rounded-lg"></div>
+
+                <h3 className="relative z-10 text-xl font-semibold text-[#404A5C] group-hover:text-white transition-colors duration-500">
                   Our Vision
                 </h3>
-                <p className="text-[#545454]">
+                <p className="relative z-10 text-[#545454] group-hover:text-gray-200 transition-colors duration-500">
                   Our vision is to provide the best service to our clients so
                   that they always get the result as they want and trust on us.
                 </p>
@@ -70,7 +78,7 @@ export default function AboutUsPage() {
             <Image
               src={aboutimage}
               alt="about us"
-              className="w-full rounded-2xl"
+              className="w-full rounded-2xl transform transition-transform duration-500 ease-in-out hover:scale-105"
             />
           </div>
         </div>
@@ -95,7 +103,7 @@ export default function AboutUsPage() {
         </div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
-          <div className="p-5 rounded-lg bg-[#F5F7FB]">
+          <div className="p-5 rounded-lg bg-[#F5F7FB] transform transition-transform duration-500 ease-in-out hover:scale-105">
             <h3 className="text-xl font-semibold text-[#404A5C] ">Precision</h3>
             <p className="text-[#545454]">
               Precision is the primary thing that you will see in us. We
@@ -105,7 +113,7 @@ export default function AboutUsPage() {
             </p>
           </div>
 
-          <div className="p-5 rounded-lg bg-[#F5F7FB]">
+          <div className="p-5 rounded-lg bg-[#F5F7FB] transform transition-transform duration-500 ease-in-out hover:scale-105">
             <h3 className="text-xl font-semibold text-[#404A5C] ">
               Transparency
             </h3>
@@ -117,7 +125,7 @@ export default function AboutUsPage() {
             </p>
           </div>
 
-          <div className="p-5 rounded-lg bg-[#F5F7FB]">
+          <div className="p-5 rounded-lg bg-[#F5F7FB] transform transition-transform duration-500 ease-in-out hover:scale-105">
             <h3 className="text-xl font-semibold text-[#404A5C] ">
               Flexibility
             </h3>

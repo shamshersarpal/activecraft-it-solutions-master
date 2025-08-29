@@ -63,7 +63,7 @@ export default function RecentWork() {
                                     <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
                                         <div>
                                             <Image
-                                                className="w-full rounded-2xl"
+                                                className="w-full rounded-2xl transform transition-transform duration-500 ease-in-out hover:scale-105"
                                                 src={slide.image}
                                                 alt={slide.title}
                                             />
