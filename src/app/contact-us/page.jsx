@@ -1,21 +1,24 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Swal from "sweetalert2";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactForm() {
+  const recaptchaRef = useRef(null);
+
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
     email: "",
     phone: "",
     user_message: "",
+    recaptcha: "",
   });
 
   const [loading, setLoading] = useState(false);
 
-  // Handle input change
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -24,10 +27,19 @@ export default function ContactForm() {
     }));
   }
 
-  // Handle form submit
   async function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
+
+    if (!formData.recaptcha) {
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Please verify reCAPTCHA before submitting.",
+      });
+      setLoading(false);
+      return;
+    }
 
     try {
       const res = await fetch(
@@ -38,9 +50,7 @@ export default function ContactForm() {
           body: JSON.stringify(formData),
         }
       );
-
       const data = await res.json();
-
       if (res.ok) {
         Swal.fire({
           icon: "success",
@@ -55,7 +65,12 @@ export default function ContactForm() {
           email: "",
           phone: "",
           user_message: "",
+          recaptcha: "",
         });
+
+        if (recaptchaRef.current) {
+          recaptchaRef.current.reset();
+        }
       } else {
         Swal.fire({
           icon: "error",
@@ -63,6 +78,10 @@ export default function ContactForm() {
           text: data.message || "Failed to send message.",
           confirmButtonColor: "#d33",
         });
+
+        if (recaptchaRef.current) {
+          recaptchaRef.current.reset();
+        }
       }
     } catch (error) {
       Swal.fire({
@@ -71,10 +90,15 @@ export default function ContactForm() {
         text: "Something went wrong. Please try again later.",
         confirmButtonColor: "#d33",
       });
+
+      if (recaptchaRef.current) {
+        recaptchaRef.current.reset();
+      }
     } finally {
       setLoading(false);
     }
   }
+
   return (
     <>
       <Header />
@@ -93,6 +117,7 @@ export default function ContactForm() {
 
       <section className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-4 py-20">
         <>
+          {/* Contact Cards */}
           <div className="flex flex-col md:flex-row justify-center gap-6 mt-10">
             {/* Email Card */}
             <div className="bg-purple-500 text-white rounded-lg shadow-md p-6 flex items-center justify-center w-72">
@@ -112,10 +137,10 @@ export default function ContactForm() {
                     clipRule="evenodd"
                   />
                 </svg>
-
                 <p className="text-lg font-semibold">info@activecraft.com</p>
               </div>
             </div>
+
             {/* Phone Card */}
             <div className="bg-gradient-to-r from-red-500 to-orange-400 text-white rounded-lg shadow-md p-6 flex items-center justify-center w-72">
               <div className="flex flex-col items-center">
@@ -135,10 +160,10 @@ export default function ContactForm() {
                     clipRule="evenodd"
                   />
                 </svg>
-
                 <p className="text-lg font-semibold">+1-646-797-2775</p>
               </div>
             </div>
+
             {/* Skype Card */}
             <div className="bg-cyan-600 text-white rounded-lg shadow-md p-6 flex items-center justify-center w-72">
               <div className="flex flex-col items-center">
@@ -153,13 +178,14 @@ export default function ContactForm() {
                   <path d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0m-2.238 9.488-.12-.002a5.2 5.2 0 0 0 .381-2.07V6.306a1.7 1.7 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.6 2.6 0 0 1-2.598 2.598z" />
                   <path d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.68.68 0 0 1-.682.682H.682A.68.68 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945z" />
                 </svg>
-
                 <p className="text-lg font-semibold">activecraft@hotmail.com</p>
               </div>
             </div>
           </div>
+
+          {/* Contact Form */}
           <div className="w-full mx-auto mt-20 max-w-[840px] ">
-            <form className="space-y-4  mx-auto" onSubmit={handleSubmit}>
+            <form className="space-y-4 mx-auto" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-4">
                 <div>
                   <label className="block text-sm font-medium">
@@ -217,103 +243,32 @@ export default function ContactForm() {
               <div>
                 <label className="block text-sm font-medium">Message</label>
                 <textarea
+                  name="user_message"
                   value={formData.user_message}
                   onChange={handleChange}
-                  name="user_message"
-                  className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-                  // defaultValue={""}
-                  defaultValue=""
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          {/* Contact Form */}
-          {/* <div className="w-full mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <form className="space-y-4" onSubmit={handleSubmit}>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium">
-                    First name*
-                  </label>
-                  <input
-                    type="text"
-                    name="first_name"
-                    value={formData.first_name}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium">
-                    Last name*
-                  </label>
-                  <input
-                    type="text"
-                    name="last_name"
-                    value={formData.last_name}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium">Email*</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium">
-                    Phone* (0123456789)
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="block text-sm font-medium">Message</label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
                 />
               </div>
+
+              <ReCAPTCHA
+                sitekey="6LdZ48ErAAAAAAeUYXMG-6s1CZ3BbAGDTzpNBw_R"
+                onChange={(token) =>
+                  setFormData({ ...formData, recaptcha: token })
+                }
+                ref={recaptchaRef}
+              />
 
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-600"
+                className="text-white bg-[#FF9900] font-medium rounded-full text-sm px-8 py-4 text-center mt-5 disabled:opacity-50"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
-          </div> */}
+          </div>
         </>
       </section>
-
       <Footer />
     </>
   );

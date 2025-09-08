@@ -20,186 +20,221 @@ export default function OurServices() {
       </section>
 
       <section className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-4 py-20">
-
-
         <div className="space-y-10 ">
-  <div className="grid md:grid-cols-2 gap-8 bg-white shadow-sm rounded-xl p-10 border border-gray-100">
-    {/* Left Content */}
-    <div>
-      <h2 className="text-3xl font-bold">
-        <span className="text-black">Website 
-</span>{" "}
-        <span className="text-gray-500">Development</span>
-      </h2>
-      <p className="text-gray-500 mt-6 text-lg leading-relaxed">
-        Activecraft offers interactive, holistic, and complete web design and development services with core proficiency in E-Learning software, web application development, e-commerce website, CMS and customized website development.
-      </p>
-       <Link href="/contact-us"
-              type="button"
-              className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none d-block mt-5 "
-            >
-              Contact Us
-            </Link>
-    </div>
-    {/* Right Content / Services */}
-    <div>
-      <h3 className="text-2xl font-bold text-gray-600 mb-6">Services</h3>
-      <div className="space-y-4">
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/01</span>
-          <span className="ml-2 font-semibold text-gray-800">Full Stack Development</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/02</span>
-          <span className="ml-2 font-semibold text-gray-800">Bootstrap Framework</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/03</span>
-          <span className="ml-2 font-semibold text-gray-800">E-Learning- Services</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/04</span>
-          <span className="ml-2 font-semibold text-gray-800">Php Framework</span>
-        </div> 
-      </div>
-    </div>
-  </div>
+          <div className="grid md:grid-cols-2 gap-8 bg-white shadow-sm rounded-xl p-10 border border-gray-100">
+            {/* Left Content */}
+            <div>
+              <h2 className="text-3xl font-bold">
+                <span className="text-black">Website</span>{" "}
+                <span className="text-gray-500">Development</span>
+              </h2>
+              <p className="text-gray-500 mt-6 text-lg leading-relaxed">
+                Activecraft offers interactive, holistic, and complete web
+                design and development services with core proficiency in
+                E-Learning software, web application development, e-commerce
+                website, CMS and customized website development.
+              </p>
+              <br></br>
+              <Link
+                href="/contact-us"
+                type="button"
+                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5"
+              >
+                Contact Us
+              </Link>
+            </div>
+            {/* Right Content / Services */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-600 mb-6">
+                Services
+              </h3>
+              <div className="space-y-4">
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/01</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    Full Stack Development
+                  </span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/02</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    Bootstrap Framework
+                  </span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/03</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    E-Learning- Services
+                  </span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/04</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    Php Framework
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div className="grid md:grid-cols-2 gap-8 bg-white shadow-sm rounded-xl p-10 border border-gray-100">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-600 mb-6">
+                Services
+              </h3>
+              <div className="space-y-4">
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/01</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    React Native
+                  </span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/02</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    Flutter
+                  </span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/03</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    Swift
+                  </span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/04</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    Objective-C
+                  </span>
+                </div>
+              </div>
+            </div>
 
-  <div className="grid md:grid-cols-2 gap-8 bg-white shadow-sm rounded-xl p-10 border border-gray-100">
-    <div>
-      <h3 className="text-2xl font-bold text-gray-600 mb-6">Services</h3>
-      <div className="space-y-4">
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/01</span>
-          <span className="ml-2 font-semibold text-gray-800">React Native</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/02</span>
-          <span className="ml-2 font-semibold text-gray-800">Flutter</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/03</span>
-          <span className="ml-2 font-semibold text-gray-800">Swift</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/04</span>
-          <span className="ml-2 font-semibold text-gray-800">Objective-C
-</span>
-        </div> 
-      </div>
-    </div>
+            <div>
+              <h2 className="text-3xl font-bold">
+                <span className="text-black">Mobile App</span>{" "}
+                <span className="text-gray-500">Development</span>
+              </h2>
+              <p className="text-gray-500 mt-6 text-lg leading-relaxed">
+                Activecraft provides mobile applications development services.
+                Pick us for Android application development, iOS application
+                development, Facebook apps development services correspond with
+                your clients through customized mobile devices.
+              </p>
+              <button
+                type="button"
+                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
+              >
+                Contact Us
+              </button>
+            </div>
+            {/* Right Content / Services */}
+          </div>
 
-    <div>
-      <h2 className="text-3xl font-bold">
-        <span className="text-black">Mobile App 
-</span>{" "}
-        <span className="text-gray-500">Development</span>
-      </h2>
-      <p className="text-gray-500 mt-6 text-lg leading-relaxed">
-        Activecraft provides mobile applications development services. Pick us for Android application development, iOS application development, Facebook apps development services correspond with your clients through customized mobile devices.
-      </p>
-       <button
-              type="button"
-              className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
-            >
-              Contact Us
-            </button>
-    </div>
-    {/* Right Content / Services */}
-    
-  </div>
+          <div className="grid md:grid-cols-2 gap-8 bg-white shadow-sm rounded-xl p-10 border border-gray-100">
+            {/* Left Content */}
+            <div>
+              <h2 className="text-3xl font-bold">
+                <span className="text-black">Internet</span>{" "}
+                <span className="text-gray-500">Marketing</span>
+              </h2>
+              <p className="text-gray-500 mt-6 text-lg leading-relaxed">
+                Activecraft provides expert SEO services to design or revamp
+                your website by interactive features, custom-made for the online
+                business for increasing traffic of your website, and engaging
+                visitors. Get the expert SEO services with optimum ROI.
+              </p>
+              <button
+                type="button"
+                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
+              >
+                Contact Us
+              </button>
+            </div>
+            {/* Right Content / Services */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-600 mb-6">
+                Services
+              </h3>
+              <div className="space-y-4">
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/01</span>
+                  <span className="ml-2 font-semibold text-gray-800">SEO</span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/02</span>
+                  <span className="ml-2 font-semibold text-gray-800">SEM</span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/03</span>
+                  <span className="ml-2 font-semibold text-gray-800">SMM</span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/04</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    PPC Adwords
+                  </span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/05</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    Link Building
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div className="grid md:grid-cols-2 gap-8 bg-white shadow-sm rounded-xl p-10 border border-gray-100">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-600 mb-6">
+                Services
+              </h3>
+              <div className="space-y-4">
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/01</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    Graphic Design
+                  </span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/02</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    Responsive Web Design
+                  </span>
+                </div>
+                <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
+                  <span className="text-gray-400 font-mono">/03</span>
+                  <span className="ml-2 font-semibold text-gray-800">
+                    E-Commerce Website{" "}
+                  </span>
+                </div>
+              </div>
+            </div>
 
-
-  <div className="grid md:grid-cols-2 gap-8 bg-white shadow-sm rounded-xl p-10 border border-gray-100">
-    {/* Left Content */}
-    <div>
-      <h2 className="text-3xl font-bold">
-        <span className="text-black">Internet
-</span>{" "}
-        <span className="text-gray-500">Marketing</span>
-      </h2>
-      <p className="text-gray-500 mt-6 text-lg leading-relaxed">
-        Activecraft provides expert SEO services to design or revamp your website by interactive features, custom-made for the online business for increasing traffic of your website, and engaging visitors. Get the expert SEO services with optimum ROI.
-      </p>
-       <button
-              type="button"
-              className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
-            >
-              Contact Us
-            </button>
-    </div>
-    {/* Right Content / Services */}
-    <div>
-      <h3 className="text-2xl font-bold text-gray-600 mb-6">Services</h3>
-      <div className="space-y-4">
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/01</span>
-          <span className="ml-2 font-semibold text-gray-800">SEO</span>
+            <div>
+              <h2 className="text-3xl font-bold">
+                <span className="text-black">Web</span>{" "}
+                <span className="text-gray-500">Design</span>
+              </h2>
+              <p className="text-gray-500 mt-6 text-lg leading-relaxed">
+                Activecraft works for both the usability and appearance to
+                achieve your business goals while designing the website. Hi-end
+                Landing Page Design, Graphic Design, Banner Design, and website
+                design will accomplish your online requirements.
+              </p>
+              <button
+                type="button"
+                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
+              >
+                Contact Us
+              </button>
+            </div>
+            {/* Right Content / Services */}
+          </div>
         </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/02</span>
-          <span className="ml-2 font-semibold text-gray-800">SEM</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/03</span>
-          <span className="ml-2 font-semibold text-gray-800">SMM</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/04</span>
-          <span className="ml-2 font-semibold text-gray-800">PPC Adwords</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/05</span>
-          <span className="ml-2 font-semibold text-gray-800">Link Building</span>
-        </div> 
-      </div>
-    </div>
-  </div>
-
-
-   <div className="grid md:grid-cols-2 gap-8 bg-white shadow-sm rounded-xl p-10 border border-gray-100">
-    <div>
-      <h3 className="text-2xl font-bold text-gray-600 mb-6">Services</h3>
-      <div className="space-y-4">
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/01</span>
-          <span className="ml-2 font-semibold text-gray-800">Graphic Design</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/02</span>
-          <span className="ml-2 font-semibold text-gray-800">Responsive Web Design</span>
-        </div>
-        <div className="border border-gray-100 p-4 rounded-md bg-white shadow-sm transform transition-transform duration-500 ease-in-out hover:scale-103">
-          <span className="text-gray-400 font-mono">/03</span>
-          <span className="ml-2 font-semibold text-gray-800">E-Commerce Website </span>
-        </div>  
-      </div>
-    </div>
-
-    <div>
-      <h2 className="text-3xl font-bold">
-        <span className="text-black">Web 
-</span>{" "}
-        <span className="text-gray-500">Design</span>
-      </h2>
-      <p className="text-gray-500 mt-6 text-lg leading-relaxed">
-        Activecraft works for both the usability and appearance to achieve your business goals while designing the website. Hi-end Landing Page Design, Graphic Design, Banner Design, and website design will accomplish your online requirements.
-      </p>
-       <button
-              type="button"
-              className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
-            >
-              Contact Us
-            </button>
-    </div>
-    {/* Right Content / Services */}
-    
-  </div>
-</div>
-</section>
- <Footer />
+      </section>
+      <Footer />
     </>
   );
 }
