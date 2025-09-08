@@ -251,7 +251,7 @@ export default function ContactForm() {
               </div>
 
               <ReCAPTCHA
-                sitekey="6LdZ48ErAAAAAAeUYXMG-6s1CZ3BbAGDTzpNBw_R"
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                 onChange={(token) =>
                   setFormData({ ...formData, recaptcha: token })
                 }
