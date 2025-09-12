@@ -160,7 +160,7 @@ export default function ContactForm() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <p className="text-lg font-semibold">+1-646-797-2775</p>
+                <p className="text-lg font-semibold">9814808323</p>
               </div>
             </div>
 
