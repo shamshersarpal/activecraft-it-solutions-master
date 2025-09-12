@@ -45,10 +45,9 @@ export default function Blog() {
                 key={blog.id}
                 className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-200"
               >
-                {/* Blog Image */}
                 <div className="h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
-                    src={`http://127.0.0.1:8000/uploads/blog_images/${blog.image}`}
+                    src={`https://ciseb.com/activecraft/public/uploads/blog_images/${blog.image}`}
                     alt={blog.name}
                     className="w-full h-full object-cover"
                   />

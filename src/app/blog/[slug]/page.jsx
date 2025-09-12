@@ -45,7 +45,7 @@ export default function ArtificialIntelligence() {
           <header className="mb-12">
             <div className="relative rounded-xl overflow-hidden shadow-lg">
               <img
-                src={`http://127.0.0.1:8000/uploads/blog_images/${blog.image}`}
+                src={`https://ciseb.com/activecraft/public/uploads/blog_images/${blog.image}`}
                 alt={blog.name}
                 className="w-full aspect-video object-cover"
               />
