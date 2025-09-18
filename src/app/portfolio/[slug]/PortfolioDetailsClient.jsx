@@ -131,20 +131,18 @@ export default function PortfolioDetailsClient({ slug }) {
               </div>
 
               {/* ✅ Show button only if link exists */}
-              {project.link &&
-                project.link.trim() !== "" &&
-                project.link.toLowerCase() !== "null" && (
-                  <div>
-                    <a
-                      className="bg-[#FF9900] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#ffaa00] transition duration-300 cursor-pointer"
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      view live project
-                    </a>
-                  </div>
-                )}
+              {project.link && (
+                <div>
+                  <a
+                    className="bg-[#FF9900] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#ffaa00] transition duration-300 cursor-pointer"
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    view live project
+                  </a>
+                </div>
+              )}
             </div>
             <p className="mb-5">{project.description}</p>
           </div>
