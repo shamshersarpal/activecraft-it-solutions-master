@@ -108,7 +108,7 @@ export default function PortfolioDetailsClient({ slug }) {
         <div className="max-w-[800px] mx-auto relative rounded-3xl">
           <OwlCarousel className="owl-theme" {...carouselOptions}>
             {slides.map((slide, idx) => (
-              <a key={idx} href={slide.link || "#"} className="block">
+              <div key={idx} className="block">
                 <div className="w-full p-4 bg-gray-200 rounded-3xl">
                   <Image
                     src={slide.image}
@@ -118,7 +118,7 @@ export default function PortfolioDetailsClient({ slug }) {
                     className="w-full rounded-3xl object-cover"
                   />
                 </div>
-              </a>
+              </div>
             ))}
           </OwlCarousel>
 
@@ -129,16 +129,20 @@ export default function PortfolioDetailsClient({ slug }) {
                   {project.title}
                 </h2>
               </div>
-              <div>
-                <a
-                  className="bg-[#FF9900] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#ffaa00] transition duration-300 cursor-pointer"
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  view live project
-                </a>
-              </div>
+
+              {/* ✅ Show button only if link exists */}
+              {project.link && (
+                <div>
+                  <a
+                    className="bg-[#FF9900] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#ffaa00] transition duration-300 cursor-pointer"
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    view live project
+                  </a>
+                </div>
+              )}
             </div>
             <p className="mb-5">{project.description}</p>
           </div>
