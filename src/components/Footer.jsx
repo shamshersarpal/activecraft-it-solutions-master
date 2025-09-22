@@ -128,7 +128,7 @@ export default function Footer(){
       </ul>
       <div className="flex gap-3 mt-4  text-xl">
         <a
-  href="#"
+  href="https://www.facebook.com/Activecraft" target="_blank"
   className="w-10 h-10 flex items-center justify-center bg-[#FF9900] text-white rounded-full text-xl hover:bg-[#FF9900] transition"
 >
   <svg
@@ -150,7 +150,7 @@ export default function Footer(){
 </a>
 
          <a
-  href="#"
+  href="https://x.com/activecraft12" target="_blank"
   className="w-10 h-10 flex items-center justify-center bg-[#FF9900] text-white rounded-full text-xl hover:bg-[#FF9900] transition"
 >
  <svg
@@ -174,7 +174,7 @@ export default function Footer(){
 
 
          <a
-  href="#"
+  href="https://www.linkedin.com/in/activecraft-software-development-8b55a528/" target="_blank"
   className="w-10 h-10 flex items-center justify-center bg-[#FF9900] text-white rounded-full text-xl hover:bg-[#FF9900] transition"
 >
  <svg
