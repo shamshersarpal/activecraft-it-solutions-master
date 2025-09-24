@@ -41,7 +41,7 @@ export default function OurServices() {
                 className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5"
               >
                 Contact Us
-              </Link>     
+              </Link>
             </div>
             {/* Right Content / Services */}
             <div>
@@ -121,12 +121,14 @@ export default function OurServices() {
                 development, Facebook apps development services correspond with
                 your clients through customized mobile devices.
               </p>
-              <button
+                <br></br>
+              <Link
+                href="/contact-us"
                 type="button"
-                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
+                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5"
               >
                 Contact Us
-              </button>
+              </Link>
             </div>
             {/* Right Content / Services */}
           </div>
@@ -144,12 +146,14 @@ export default function OurServices() {
                 business for increasing traffic of your website, and engaging
                 visitors. Get the expert SEO services with optimum ROI.
               </p>
-              <button
+                <br></br>
+              <Link
+                href="/contact-us"
                 type="button"
-                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
+                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5"
               >
                 Contact Us
-              </button>
+              </Link>
             </div>
             {/* Right Content / Services */}
             <div>
@@ -223,12 +227,14 @@ export default function OurServices() {
                 Landing Page Design, Graphic Design, Banner Design, and website
                 design will accomplish your online requirements.
               </p>
-              <button
+              <br></br>
+              <Link
+                href="/contact-us"
                 type="button"
-                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
+                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5"
               >
                 Contact Us
-              </button>
+              </Link>
             </div>
             {/* Right Content / Services */}
           </div>
