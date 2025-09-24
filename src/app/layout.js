@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "ActiveCraft IT",
+  title: "Activecraft || Best web development company India | Best web design company India",
   description: "Top Web Development Company in India 2025",
 };
 
